@@ -8,7 +8,9 @@ html {
   transition: 1s linear;
   box-sizing: border-box;
   padding: 2vw;
-  font-size: 1vw;
+  font-size: 10px;
+  text-align: justify;
+  font-weight: 500;
 }
 body {
   font-size: 2rem;
@@ -17,78 +19,57 @@ body {
   box-shadow: 1vw 1vw 3vw black;
   background-color: blue;
   border-radius: 1vw;
+  padding: 5vw;
 }
 header {
-  background-color: inherit;
-  border: 2px solid black;
-  margin: 0 auto;
-  width: 200px;
+  padding: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
-header img {
+img {
   max-width: 150px;
   border-radius: 50%;
-  float: none;
+}
+h1, h2, h3, h4 {
+  text-transform: uppercase;
 }
 h3 {
   background: linear-gradient(to left, yellow, orange);
   color: black;
-  padding: 20px;
+  padding: 1vw;
   border: 2px solid black;
+}
+footer {
+  text-align: center;  
+  font-size: 1.05rem;
+  margin-top: 8vw;
+  margin-bottom: -4vw;
+}
+section {
+  max-width: 80vw;
+  margin: 0 auto;
 }
 li {
   list-style-type: none;
-  float: justify;
 }
 a {
   text-decoration: none;
-  color: white;  
+  color: white;
 }
-i {
-  float: none;
+.folio {
+  display: grid;
+  grid-gap: 1vw;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-
-
-article {
-  padding:0 1em;
+.folio>div {
+  border: 2px solid yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-section{
-  margin: 1em;
-  padding: 1em;
+.none {
+  display: none;
 }
-
-header, main, footer {
-  margin: 0 auto;
-}
-
-header {
-  padding: 2em;
-  text-align: center;
-  /*background-image: url('sciezka');*/
-}
-
-header section {
-  margin: 0 auto;
-}
-
-
-
-h1 {
-  margin: 1em 0;
-  text-transform: uppercase;
-}
-
-
-main {
-  max-width: 1140px;
-}
-
-
-.course {
-}
-
-.course .title {
-}
-
-.course .descrition {
+.indent {
+  text-indent: 8vw;
 }
